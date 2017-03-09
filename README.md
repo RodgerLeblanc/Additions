@@ -1,2 +1,2 @@
 # Additions
-Simple addition app, created for my autistic child who loves numbers.
+Simple addition app, created for my child who loves numbers.
