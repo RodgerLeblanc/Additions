@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Additions"
+             x:Class="Additions.MainPage">
+    <StackLayout
+        Orientation="Horizontal"
+        VerticalOptions="Center"
+        HorizontalOptions="Center">
+        <local:NumberView
+            x:Name="FirstNumber"
+            NumberValue="1"
+            NumberValueChanged="OnNumberValueChanged"
+            VerticalOptions="Center"/>
+        <Label
+            Text="+"
+            VerticalOptions="Center"
+            Style="{StaticResource LabelStyle}"/>
+        <local:NumberView
+            x:Name="SecondNumber"
+            NumberValue="1"
+            NumberValueChanged="OnNumberValueChanged"
+            VerticalOptions="Center"/>
+        <Label
+            Text="="
+            VerticalOptions="Center"
+            Style="{StaticResource LabelStyle}"/>
+        <Label
+            Text="{Binding TotalValue}"
+            VerticalOptions="Center"
+            Style="{StaticResource LabelStyle}"/>
+    </StackLayout>
+</ContentPage>

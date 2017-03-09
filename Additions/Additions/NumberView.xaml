@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Additions.NumberView"
+    HorizontalOptions="Center"
+    VerticalOptions="Center">
+    <Button
+            Text="▲"
+            HorizontalOptions="Center"
+            Clicked="Up_Button_Clicked"/>
+    <Label 
+            Text="{Binding NumberValue}"
+            HorizontalOptions="Center"
+            Style="{StaticResource LabelStyle}"/>
+    <Button
+            Text="▼"
+            HorizontalOptions="Center"
+            Clicked="Down_Button_Clicked"/>
+</StackLayout>
